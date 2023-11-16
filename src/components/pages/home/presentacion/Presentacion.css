@@ -1,0 +1,45 @@
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.presentation-section {
+    background-color: var(--color3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px 0;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.intro {
+    float: left;
+    width: 60%;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.profile-image {
+    float: right;
+    width: 30%;
+    
+}
+
+.profile-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25%;
+}
+
+.highlight {
+    color: #3498db;
+}

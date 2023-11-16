@@ -1,0 +1,42 @@
+
+.container-fluid{
+    background-color: var(--color1);
+    padding: 10px;
+}
+.navbar{
+    padding: 0px !important;
+}
+.offcanvas-body{
+    background-color: var(--color3);
+}
+.offcanvas-header{
+    background-color: var(--color3);
+
+}
+.logo{
+    width: 60px;
+}
+.logo-text{
+    color: var(--color3);
+    font-size: 1.2rem;
+}
+li{
+ color: var(--color1);
+ font-weight: 600;
+ font-size: 1.1rem;
+}
+.menuLogo{
+    height: 35px;
+    transition: height 0.3s ease;
+}
+.menuLogo:hover{
+    height: 40px;
+    
+}
+.navbar-toggler{
+    border: none !important;
+}
+
+.navbar-toggler.navbar-toggler:focus {
+    box-shadow: none;
+}
