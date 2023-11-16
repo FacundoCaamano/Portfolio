@@ -1,23 +1,39 @@
-.card {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: #fff;
-    overflow: hidden;
-    width: 300px;
-    height: 200px;
+.aboutContainer{
+    width: 100%;
+}
+.iconCV{
+    width: 100px; 
+}
+.iconGit{
+    width: 100px;
+    transform: scaleX(-1);
+}
+.iconProject{
+    width: 100px;
+    transform: scaleX(-1);
+}
+.iconLinkedin{
+    width: 100px;
+    
 }
 
-.card-content {
+.card{
+    background-color: var(--color3);
     padding: 20px;
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
-.aboutContainer{
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: linear-gradient(to right, #3498db, #2980b9);
+
+.row{
+    margin: 20px 0;
+}
+.card-title{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--color1);
+    font-weight: 450;
+}
+.card-title:hover{
+    font-size: 1.5rem;
 }
