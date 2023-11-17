@@ -1,3 +1,43 @@
 .footer{
     background-color: var(--color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.footer--img{
+    width: 80px;
+    margin: 30px;
+}
+.footer--img:hover{
+    width: 81px;
+    margin: 29px;
+}
+.footer--container{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer--container::before{
+    border-top: 2px solid var(--color2);
+    translate: 0 50%;
+    content: "";
+    width: 70%;
+    display: inline-block;
+}
+.footer--container::after{
+    border-top: 2px solid var(--color2);
+    translate: 0 50%;
+    content: "";
+    width: 70%;
+    display: inline-block;
+    
+}
+
+.footer--title{
+    color: var(--color3);
+    font-size: 1.4rem;
 }

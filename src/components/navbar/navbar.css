@@ -21,7 +21,6 @@
     font-size: 1.2rem;
 }
 li{
- color: var(--color1);
  font-weight: 600;
  font-size: 1.1rem;
 }
@@ -39,4 +38,10 @@ li{
 
 .navbar-toggler.navbar-toggler:focus {
     box-shadow: none;
+}
+.nav-link{
+    color: var(--color1) !important;
+}
+.nav-link.active{
+    color: rgb(0, 0, 0) !important;
 }
