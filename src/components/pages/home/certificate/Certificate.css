@@ -8,5 +8,6 @@
     margin: 50px 0px;
 }
 .certificatesContainer--img{
-    width: 100%;
+    width: 85%;
+    box-shadow: 0 20px 42px 0 rgba(0, 0, 0, 0.37);
 }

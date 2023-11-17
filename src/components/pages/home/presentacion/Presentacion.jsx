@@ -2,7 +2,7 @@ import './Presentacion.css'
 import foto from '../../../../assets/imgs/foto.jpg'
 export const Presentacion =()=>{
     return (
-        <div className='presentacionContainer'>
+        <div className='presentacionContainer' id='presentacion'>
             <section className="presentation-section">
                 <div className="container">
                     <div className="intro">

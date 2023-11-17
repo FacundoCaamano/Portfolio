@@ -6,7 +6,7 @@ import './Certificate.css'
 export const Certificate =()=>{
     return(
         <>
-            <div className='certificatesContainer'>
+            <div className='certificatesContainer' id='certificate'>
                 <img className='certificatesContainer--img'src={desarrolloWeb} alt="" />
                 <img className='certificatesContainer--img'src={JavaScript} alt="" />
                 <img className='certificatesContainer--img'src={ReactJs} alt="" />

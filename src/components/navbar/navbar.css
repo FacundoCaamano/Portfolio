@@ -1,7 +1,7 @@
 
 .container-fluid{
     background-color: var(--color1);
-    padding: 10px;
+    padding: 20px 40px !important;
 }
 .navbar{
     padding: 0px !important;
@@ -25,11 +25,11 @@ li{
  font-size: 1.1rem;
 }
 .menuLogo{
-    height: 35px;
+    height: 49px;
     transition: height 0.3s ease;
 }
 .menuLogo:hover{
-    height: 40px;
+    height: 52px;
     
 }
 .navbar-toggler{

@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom'
 import cv from '../../../../assets/imgs/fc.png'
 export const About = () => {
     return (
-        <div className="aboutContainer">
+        <div className="aboutContainer" id='about'>
             <div className="card mb-3" >
                 <div className="row g-0">
                     <div className="col-md-4">

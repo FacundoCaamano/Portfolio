@@ -1,0 +1,13 @@
+.dropDownContainer{
+    margin-right: 20px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color2);
+    box-shadow: 1px 5px 18px 8px black;
+    border-radius: 5px;
+}
+
+.dropdown-menu{
+    box-shadow: 1px 0px 20px 1px black;
+}
