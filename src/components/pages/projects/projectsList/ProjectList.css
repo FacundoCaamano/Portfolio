@@ -1,7 +1,11 @@
-.projectsContainer{
+.proyectListContainer{
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
+    min-height: 100vh;
+    padding: 10px;
+    margin: 20px;
 }

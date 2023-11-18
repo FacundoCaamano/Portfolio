@@ -11,7 +11,7 @@ export const About = () => {
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">
-                            <a href={cv} download='cv' className="card-title">Descargar CV</a>
+                            <a href={cv} download='cv' className="card-title tituloCard">Descargar CV</a>
                         </div>
                     </div>
                 </div>
@@ -21,7 +21,7 @@ export const About = () => {
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">
-                            <a href='https://www.linkedin.com/in/facundo-caama%C3%B1o-6a581324b/' target="_blank" className="card-title">Link a mi perfil de Linkedin</a>
+                            <a href='https://www.linkedin.com/in/facundo-caama%C3%B1o-6a581324b/' target="_blank" className="card-title tituloCard">Link a mi perfil de Linkedin</a>
                         </div>
                     </div>
                 </div>
@@ -31,7 +31,7 @@ export const About = () => {
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">
-                            <NavLink to='/projects' className="card-title">Mis projectos</NavLink>
+                            <NavLink to='/projects' className="card-title tituloCard">Mis projectos</NavLink>
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@ export const About = () => {
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">
-                            <a href='https://github.com/FacundoCaamano?tab=repositories' target='_blank' className="card-title">Link a mi repositorio en Github</a>
+                            <a href='https://github.com/FacundoCaamano?tab=repositories' target='_blank' className="card-title tituloCard">Link a mi repositorio en Github</a>
                         </div>
                     </div>
                 </div>

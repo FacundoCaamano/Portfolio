@@ -35,6 +35,8 @@
     color: var(--color1);
     font-weight: 450;
 }
-.card-title:hover{
+
+.tituloCard:hover{
     font-size: 1.5rem;
+
 }

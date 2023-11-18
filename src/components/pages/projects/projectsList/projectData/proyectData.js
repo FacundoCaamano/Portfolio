@@ -1,1 +1,0 @@
-import projects from '../../../../proyectsData/proyects.json'
