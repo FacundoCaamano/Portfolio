@@ -1,0 +1,12 @@
+.imgCard{
+    object-fit: cover;
+}
+
+.links--container{
+    display: flex;
+    justify-content: space-around;
+}
+.link--project{
+    width: 40%;
+    color: var(--color1);
+}

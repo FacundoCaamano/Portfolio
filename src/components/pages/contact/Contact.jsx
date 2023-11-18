@@ -1,6 +1,9 @@
-
+import { Form } from "./form/Form"
+import './Contact.css'
 export const Contact = ()=>{
     return(
-        <h2>Contact</h2>
+        <div className="formContainer">
+            <Form/>
+        </div>
     )
 }
