@@ -5,7 +5,44 @@
     gap: 30px;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     padding: 10px;
     margin: 20px;
+}
+
+.item_button{
+    width: 100% ;
+    background-color: var(--color4);
+    color: var(--color2);
+    border: none;
+}
+
+.item_button:hover{
+    border-bottom: 1px solid var(--color1);
+    color: var(--color1);
+}
+.toolsListSelected{
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+}
+.list-group-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color1);
+    color: var(--color3);
+    margin-right: 20px;
+}
+
+.btnDeleteTool{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border: 1px solid var(--color2);
+    margin-left: 15px;
+}
+.dropDowmTools{
+    position: absolute;
+    left: 20%;
 }
