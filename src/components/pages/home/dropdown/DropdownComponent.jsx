@@ -4,7 +4,7 @@ export const DropdownComponent = () => {
         <div className="dropDownContainer">
 
         <div className="dropdown">
-            <button className="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button className="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Dropdown button
             </button>
             <ul className="dropdown-menu">

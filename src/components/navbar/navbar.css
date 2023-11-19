@@ -7,11 +7,11 @@
     padding: 0px !important;
 }
 .offcanvas-body{
-    background-color: var(--color3);
+    background-color: var(--color4);
 }
 .offcanvas-header{
-    background-color: var(--color3);
-
+    background-color: var(--color4);
+    color: var(--color2);
 }
 .logo{
     width: 60px;
@@ -22,7 +22,6 @@
 }
 li{
  font-weight: 600;
- font-size: 1.1rem;
 }
 .menuLogo{
     height: 49px;
@@ -40,8 +39,11 @@ li{
     box-shadow: none;
 }
 .nav-link{
-    color: var(--color1) !important;
+    color: var(--color2) !important;
+    margin: 10px 0px;
 }
 .nav-link.active{
-    color: rgb(0, 0, 0) !important;
-}
+    font-size: 1.2rem !important; 
+    border-bottom: 1px solid var(--color3);
+    width: 200px;
+}   

@@ -1,6 +1,13 @@
 .formContainer{
     min-height: 60vh;
+    width: 40vw;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width:786px) {
+    .formContainer{
+        width: 100vw;
+    }
 }

@@ -41,7 +41,7 @@ export const NavBar = () => {
         <div className="offcanvas offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div className="offcanvas-header">
             <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-            <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" className="btn-close  btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div className="offcanvas-body">
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -50,17 +50,16 @@ export const NavBar = () => {
                   Home
                 </li>
               </NavLink>
-              <NavLink to="/contact" className="nav-link" >
-                <li className="nav-item" data-bs-dismiss={viewPortMovil}>
-                  Contact
-                </li>
-              </NavLink>
               <NavLink to='/projects' className="nav-link" >
                 <li className="nav-item" data-bs-dismiss={viewPortMovil}>
                   Project
                 </li>
               </NavLink>
-
+              <NavLink to="/contact" className="nav-link" >
+                <li className="nav-item" data-bs-dismiss={viewPortMovil}>
+                  Contact
+                </li>
+              </NavLink>
             </ul>
           </div>
         </div>
