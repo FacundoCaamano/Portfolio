@@ -6,6 +6,6 @@ export const Projects = () => {
     const projectsData = ProjectsInfo
     
     return (
-        <ProjectsList projectsData={projectsData}/>
+        <ProjectsList className="proyectListContainer" projectsData={projectsData}/>
     )
 }

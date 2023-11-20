@@ -29,39 +29,41 @@ import { useState } from 'react'; export const ProjectsList = ({ projectsData })
     const filteredProjects = projectsData.filter(filterProjectsByTools);
 
     return (
-        <div >
+        <div>
             {/* Renderizar botones de herramientas seleccionables */}
-            <div >
+            <div className='dropdownListToolsContainer'>
                 <div className="dropdown dropDowmTools">
-                    <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Seleccione herramientas:
+                    <button className="btn btn-secondary dropdown-toggle btnToolsList" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Seleccione herramientas:
                     </button>
                     <ul className="dropdown-menu">
                         {Array.from(new Set(ProjectsInfo.flatMap(project => project.herramientas)))
                             .map(tool => (
-                                <div >
+                                <li key={tool}>
                                     <button
-                                        key={tool}
                                         onClick={() => handleToolSelection(tool)}
                                         className='item_button'
                                     >
                                         {tool}
                                     </button>
-                                </div>
+                                </li>
                             ))}
                     </ul>
                 </div>
-            </div>
-            <div className='toolsListSelected'>
-                <ul className="list-group">
-                    {
-                        selectedTools.map(tool => {
-                            return (
-                                <li className="list-group-item">{tool} <button type="button" class="btn btnDeleteTool" onClick={() => deleteTool(tool)}>x</button></li>
-                            )
-                        })
-                    }
-                </ul>
+                <div className='toolsListSelected'>
+                    <div className='toolListContainer'>
+
+                        <ul className="list-groupItems">
+                            {
+                                selectedTools.map((tool, index) => {
+                                    return (
+                                        <li key={index} className="list-group-itemTool">{tool} <button type="button" className="btn btnDeleteTool" onClick={() => deleteTool(tool)}>x</button></li>
+                                    )
+                                })
+                            }
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div className='proyectListContainer'>
                 {/* Renderizar proyectos filtrados */}

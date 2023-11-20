@@ -10,9 +10,9 @@ export const ProjectCard = ({ info }) => {
                     <div className="col-md-8">
                         <div className="card-body cardProjectInfo">
                             <h5 className="card-title">{info.name}</h5>
-                            {info.herramientas.map(herramienta => {
+                            {info.herramientas.map((herramienta, index) => {
                                 return (
-                                    <span> { herramienta } </span>
+                                    <span key={index}> { herramienta } </span>
                                 )
                             })}
                             <div className="links--container">
