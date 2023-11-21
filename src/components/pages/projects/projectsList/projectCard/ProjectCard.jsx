@@ -10,14 +10,18 @@ export const ProjectCard = ({ info }) => {
                     <div className="col-md-8">
                         <div className="card-body cardProjectInfo">
                             <h5 className="card-title">{info.name}</h5>
-                            {info.herramientas.map((herramienta, index) => {
-                                return (
-                                    <span key={index}> { herramienta } </span>
-                                )
-                            })}
-                            <div className="links--container">
-                                <a href={info.repositorio} target='_blank' className='link--project'>Link repositorio</a>
-                                <a href={info.link} target='_blank' className='link--project'>Link web</a>
+                            <div className='cardBodyContainer'>
+                                <div className='toolsContainer'>
+                                    {info.herramientas.map((herramienta, index) => {
+                                        return (
+                                            <span key={index}> {herramienta} </span>
+                                        )
+                                    })}
+                                </div>
+                                <div className="links--container">
+                                    <a href={info.repositorio} target='_blank' className='link--project'>Link repositorio</a>
+                                    <a href={info.link} target='_blank' className='link--project'>Link web</a>
+                                </div>
                             </div>
                         </div>
                     </div>

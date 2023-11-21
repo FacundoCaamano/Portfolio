@@ -1,15 +1,21 @@
 import './Form.css'
 import emailjs from '@emailjs/browser';
-
+import Swal from 'sweetalert2';
 export const Form = () => {
 
-    const handleSubmit = (event)=>{
-        event.preventDefault()
-        alert('se envio')
-        emailjs.sendForm('service_q2ws05f', 'template_8hmvq1p', event.target, 'FxsY6Mi7n6sti1PHk' )
-    }
-    return (
-        <form onSubmit={handleSubmit} className='formContact'>
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    emailjs.sendForm('service_q2ws05f', 'template_8hmvq1p', event.target, 'FxsY6Mi7n6sti1PHk')
+
+    Swal.fire({
+      title: "Good job!",
+      text: "You clicked the button!",
+      icon: "success"
+    });
+  }
+  return (
+    <>
+      <form onSubmit={handleSubmit} className='formContact'>
         <div className="mb-3">
           <label className="form-label labelForm">Nombre</label>
           <input className="form-control inputForm" type="text" name="nombre" required />
@@ -32,5 +38,9 @@ export const Form = () => {
           <button type="reset" className="btn btn-primary btnForm">reset</button>
         </div>
       </form>
-    )
+
+
+   
+    </>
+  )
 }

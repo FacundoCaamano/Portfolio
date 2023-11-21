@@ -13,37 +13,37 @@ export const ProjectsInfo = [
         herramientas: [
             "Vite",
             "ReactJs",
-            "css",
-            "git"
+            "CSS",
+            "Git"
         ]
     },
     {
         id: 4,
-        name: "Perifericos-Caamaño",
+        name: "Periféricos-Caamaño",
         pictureUrl: PerifericosCaamaño,
         repositorio: 'https://github.com/FacundoCaamano/perifericos-caamano.git',
         link: "https://perifericos-caamano.vercel.app/",
         herramientas:
             [
                 "ReactJs",
-                "reactboostrap",
-                "git",
+                "reactBootstrap",
+                "Git",
                 "sweetAlert"
             ]
     },
     {
         id: 3,
-        name: "bebidas-caamaño",
+        name: "bebidas-Caamaño",
         pictureUrl: BebidasCaamano,
         repositorio: 'https://github.com/FacundoCaamano/bebidasCaama-o.git',
         link: "https://bebidas-caama-fp7rd35wy-facundocaamano.vercel.app/",
         herramientas:
             [
-                "html",
-                "css",
-                "javascript",
-                "boostrap",
-                "git",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Bootstrap",
+                "Git",
                 "sweetAlert"
             ]
     },
@@ -55,24 +55,24 @@ export const ProjectsInfo = [
         link: "https://portafolio-nine-omega.vercel.app/",
         herramientas:
             [
-                "html",
-                "scss",
-                "boostrap",
-                "git"
+                "HTML",
+                "SCSS",
+                "Bootstrap",
+                "Git"
             ]
     },
     {
         id: 1,
-        name: "vehiculos-caamaño",
+        name: "vehículos-Caamaño",
         pictureUrl: VehiculosCaamaño,
         repositorio: 'https://github.com/FacundoCaamano/vehiculos-caamano.git',
         link: "https://vehiculos-caamano-74gu7bgcd-facundocaamano.vercel.app/",
         herramientas:
             [
-                "html",
-                "scss",
-                "boostrap",
-                "git"
+                "HTML",
+                "SCSS",
+                "Bootstrap",
+                "Git"
             ]
     }
 ]
