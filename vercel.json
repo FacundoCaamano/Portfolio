@@ -1,8 +1,20 @@
 {
     "routes":[
         {
-            "src": "/",
-            "dest": "/"
+            "src" :"/",
+            "dest":"/"
+        },
+        {
+            "src":"/home",
+            "dest":"/"
+        },
+        {
+            "src":"/contact",
+            "dest":"/"
+        },
+        {
+            "src":"/projects"
         }
+
     ]
 }
