@@ -8,7 +8,23 @@ import { Contact } from './components/pages/contact/Contact';
 import { Projects } from './components/pages/projects/Projects';
 import { useEffect, useState } from 'react';
 function App() {
-  const [isDarkMode , setIsDarkMode] = useState(false)
+  const [isDarkMode , setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    // Obtener el valor del localStorage cuando se monta el componente
+    const storedIsDarkMode = localStorage.getItem('isDarkMode');
+
+    // Si hay un valor almacenado, actualizar el estado con ese valor
+    if (storedIsDarkMode) {
+      setIsDarkMode(JSON.parse(storedIsDarkMode));
+    }
+  }, []);
+
+  useEffect(() => {
+    // Guardar el valor de isDarkMode en el localStorage cuando cambie
+    localStorage.setItem('isDarkMode', JSON.stringify(isDarkMode));
+  }, [isDarkMode]);
+
   return (
     <div className={isDarkMode ? 'App darkMode' : 'App'}>
       <Router>
