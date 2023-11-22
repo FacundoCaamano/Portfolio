@@ -1,6 +1,7 @@
 import './About.css'
 import {NavLink} from 'react-router-dom'
 import cv from '../../../../assets/imgs/fc.png'
+import curriculum from '../../../../assets/document/curriculumfc.pdf'
 export const About = ({isDarkMode, setIsDarkMode}) => {
     return (
         <div className="aboutContainer" id='about'>
@@ -11,7 +12,7 @@ export const About = ({isDarkMode, setIsDarkMode}) => {
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">
-                            <a href={cv} download='cv' className={isDarkMode ? "card-title tituloCard darkModeTituloCard" : "card-title tituloCard"}>Descargar CV</a>
+                            <a href={curriculum} download='cvFacundoCaamano' className={isDarkMode ? "card-title tituloCard darkModeTituloCard" : "card-title tituloCard"}>Descargar CV</a>
                         </div>
                     </div>
                 </div>
