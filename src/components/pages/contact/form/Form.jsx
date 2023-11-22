@@ -8,8 +8,8 @@ export const Form = ({isDarkMode, setIsDarkMode}) => {
     emailjs.sendForm(import.meta.env.VITE_SERVICE, import.meta.env.VITE_TEMPLATE, event.target, import.meta.env.VITE_KEY)
 
     Swal.fire({
-      title: "Good job!",
-      text: "You clicked the button!",
+      title: "Bien!",
+      text: "El correo fue enviado exitosamente, gracias por contactar, me pondré en contacto a la brevedad!",
       icon: "success"
     });
 

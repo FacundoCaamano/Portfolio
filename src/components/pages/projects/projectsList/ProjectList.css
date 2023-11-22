@@ -19,23 +19,17 @@
     border-bottom: 1px solid var(--color1);
     color: var(--color1);
 }
-.toolsListSelected{
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
-    min-height: 100px;
-}
 .toolListContainer{
     width: 40%;
     display: flex;
     flex-wrap: wrap;
 }
 .list-groupItems{
-    width: 80%;
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
     padding: 0;
+    width: 100%;
 }
 .list-group-itemTool{
     display: flex;
@@ -58,7 +52,17 @@
 }
 .dropdownListToolsContainer{
     width: 100vw;
-    margin-left: 50px;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+}
+
+.toolsListSelected{
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    min-height: 100px;
+    width: 80%;
 }
 .btnToolsList{
     background-color: var(--color4);
@@ -68,10 +72,6 @@
     .toolsListSelected{
         width: 100%;
     }
-    .dropDowmTools{
-        left: 0%;
-        top: 15vh;
-    }
     .proyectListContainer{
         width: 100%;
         min-height: 0vh;
@@ -80,8 +80,8 @@
     .toolListContainer{
         width: 100%;
     }
-    .dropDowmTools{
-        position: static
-        
+    .dropdownListToolsContainer{
+        flex-direction: column;
     }
+   
 }

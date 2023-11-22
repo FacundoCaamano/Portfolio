@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route,Navigate } from 'react-router-do
 import { Home } from './/components/pages/home/Home';
 import { Contact } from './components/pages/contact/Contact';
 import { Projects } from './components/pages/projects/Projects';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 function App() {
   const [isDarkMode , setIsDarkMode] = useState(false)
   return (
