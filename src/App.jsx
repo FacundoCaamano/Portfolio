@@ -18,7 +18,7 @@ function App() {
             <Route path="/home" element={<Home isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />} />
             <Route path="/projects" element={<Projects isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />} />
             <Route path="/Contact" element={<Contact isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
-            <Route path="*" element={<Navigate to="/home"/>} />
+            <Route path="*" element={<Navigate to=""/>} />
           </Routes>
         </section>
         <Footer isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>

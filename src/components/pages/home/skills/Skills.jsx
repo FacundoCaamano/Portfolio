@@ -9,7 +9,6 @@ export const Skills = () => {
     }, []);
     return (
         <>  
-            
             <div id='skills' className="container text-center skillsContainer">
                 <div className="row">
                     <div className="col" >
