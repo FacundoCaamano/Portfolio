@@ -1,10 +1,13 @@
 import './navbar.css'
 import { NavLink } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import logo from '../../assets/imgs/fc.png'
 import menu from '../../assets/imgs/menu.png'
-import { useState, useEffect } from 'react';
 import luna from '../../assets/icons/luna.png'
 import sol from '../../assets/icons/sol.png'
+import contact from '../../assets/icons/contact.png'
+import project from '../../assets/icons/project.png'
+import home from '../../assets/icons/home.png'
 export const NavBar = ({isDarkMode, setIsDarkMode}) => {
   const [viewPortMovil, setViewPortMOvil] = useState("null");
   const viewPort = window.innerWidth;
@@ -50,16 +53,18 @@ export const NavBar = ({isDarkMode, setIsDarkMode}) => {
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
               <NavLink className="nav-link"  aria-current="page" to="/home">
                 <li className="nav-item"  data-bs-dismiss={viewPortMovil}>
-                  Home
+                  <img src={home} alt="icon" /> Home
                 </li>
               </NavLink>
               <NavLink to='/projects' className="nav-link" >
                 <li className="nav-item" data-bs-dismiss={viewPortMovil}>
+                  <img src={project} alt="" />
                   Project
                 </li>
               </NavLink>
               <NavLink to="/contact" className="nav-link" >
                 <li className="nav-item" data-bs-dismiss={viewPortMovil}>
+                  <img src={contact} alt="contact" />
                   Contact
                 </li>
               </NavLink>

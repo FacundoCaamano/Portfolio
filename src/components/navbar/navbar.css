@@ -57,6 +57,12 @@ li{
     transform: scale(1.1);
     cursor: pointer;
 }
+
+.nav-item img{
+    width: 30px;
+    color: white;
+    margin: 5px;
+}
 @media screen and (max-width: 760px) {
     .logo-text{
         color: var(--color3);

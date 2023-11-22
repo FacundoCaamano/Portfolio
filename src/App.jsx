@@ -15,10 +15,10 @@ function App() {
         <NavBar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
         <section className='menu'>
           <Routes>
-            <Route path="/home" element={<Home isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />} />
-            <Route path="/projects" element={<Projects isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />} />
-            <Route path="/Contact" element={<Contact isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
-            <Route path="*" element={<Navigate to=""/>} />
+            <Route path="home" element={<Home isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />} />
+            <Route path="projects" element={<Projects isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />} />
+            <Route path="Contact" element={<Contact isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
+            <Route path="*" element={<Navigate to="home"/>} />
           </Routes>
         </section>
         <Footer isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>

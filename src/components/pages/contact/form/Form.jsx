@@ -12,6 +12,8 @@ export const Form = ({isDarkMode, setIsDarkMode}) => {
       text: "You clicked the button!",
       icon: "success"
     });
+
+    event.target.reset()
   }
   return (
     <>
@@ -38,9 +40,6 @@ export const Form = ({isDarkMode, setIsDarkMode}) => {
           <button type="reset" className="btn btn-primary btnForm">reset</button>
         </div>
       </form>
-
-
-   
     </>
   )
 }
