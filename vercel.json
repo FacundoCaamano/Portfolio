@@ -1,24 +1,8 @@
 {
-    "routes":[
+    "rewrites":[
         {
-            "src" :"/",
-            "dest":"/"
-        },
-        {
-            "src":"/home",
-            "dest":"/"
-        },
-        {
-            "src":"/contact",
-            "dest":"/"
-        },
-        {
-            "src":"/projects"
-        },
-        {
-            "src":"/(.*)",
-            "dest":"/"
+            "src": "/(.*)",
+            "dest": "/App.js"
         }
-
     ]
 }
