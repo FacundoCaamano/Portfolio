@@ -3,7 +3,9 @@ import { NavLink } from 'react-router-dom';
 import logo from '../../assets/imgs/fc.png'
 import menu from '../../assets/imgs/menu.png'
 import { useState, useEffect } from 'react';
-export const NavBar = () => {
+import luna from '../../assets/icons/luna.png'
+import sol from '../../assets/icons/sol.png'
+export const NavBar = ({isDarkMode, setIsDarkMode}) => {
   const [viewPortMovil, setViewPortMOvil] = useState("null");
   const viewPort = window.innerWidth;
 
@@ -28,13 +30,14 @@ export const NavBar = () => {
   
   return (
     <nav className="navbar bg-body-tertiary">
-      <div className="container-fluid">
+      <div className={isDarkMode ? 'container-fluid darkMode' : 'container-fluid' }>
         <div>
           <NavLink className="navbar-brand" to='/home'>
             <img className='logo' src={logo} alt="Tu Logo" />
           </NavLink>
           <span className="logo-text">Facundo Caamaño</span>
         </div>
+          <img className='iconMode' src={isDarkMode ? luna : sol} alt="icon modo" onClick={() => setIsDarkMode(!isDarkMode)}/>
         <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" >
          <img className='menuLogo' src={menu} alt="menu"/>
         </button>

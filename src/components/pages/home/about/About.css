@@ -40,3 +40,10 @@
     font-size: 1.5rem;
 
 }
+.darkModeCard{
+    background-color: var(--color5);
+}
+
+.darkModeTituloCard{
+    color: var(--color6);
+}

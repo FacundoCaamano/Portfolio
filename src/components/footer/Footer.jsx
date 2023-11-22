@@ -1,7 +1,7 @@
 import './Footer.css'
-export const Footer = () => {
+export const Footer = ({isDarkMode, setIsDarkMode}) => {
     return (
-        <footer className='footer'>
+        <footer className={isDarkMode ? 'footer darkModeFooter' : 'footer'}>
             <div className='footer--container'>
                 <a href="https://github.com/FacundoCaamano?tab=repositories" target='_blank'>
                     <img className='footer--img' src="https://cdn-icons-png.flaticon.com/512/270/270798.png" alt="" />

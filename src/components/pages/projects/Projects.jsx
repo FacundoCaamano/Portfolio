@@ -1,11 +1,11 @@
 import './Projects.css'
 import {ProjectsInfo} from '../../../projectsInfo/ProjectsInfo.jsx'
 import { ProjectsList } from './projectsList/ProjectList'
-export const Projects = () => {
+export const Projects = ({isDarkMode, setIsDarkMode}) => {
 
     const projectsData = ProjectsInfo
     
     return (
-        <ProjectsList className="proyectListContainer" projectsData={projectsData}/>
+        <ProjectsList isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} className="proyectListContainer" projectsData={projectsData}/>
     )
 }

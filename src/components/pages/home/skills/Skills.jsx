@@ -8,9 +8,9 @@ export const Skills = () => {
         });
     }, []);
     return (
-        <>
-            <div className="container text-center skillsContainer">
-            <h2 id='skills'>Skills</h2>
+        <>  
+            
+            <div id='skills' className="container text-center skillsContainer">
                 <div className="row">
                     <div className="col" >
                         <img 

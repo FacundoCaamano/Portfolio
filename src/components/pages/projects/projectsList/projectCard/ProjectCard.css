@@ -27,3 +27,9 @@
     flex-direction: column;
     min-height: 80px;
 }
+.darkModeLink{
+    color: var(--color6);
+}
+.darkModeTool{
+    color: var(--color2);
+}

@@ -3,6 +3,9 @@
     background-color: var(--color1);
     padding: 20px 40px !important;
 }
+.container-fluid.darkMode{
+    background-color: var(--color5);
+}
 .navbar{
     padding: 0px !important;
 }
@@ -47,3 +50,17 @@ li{
     border-bottom: 1px solid var(--color3);
     width: 200px;
 }   
+.iconMode{
+    height: 60px;
+}
+.iconMode:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+@media screen and (max-width: 760px) {
+    .logo-text{
+        color: var(--color3);
+        font-size: 1.2rem;
+        opacity: 0;
+    }
+}

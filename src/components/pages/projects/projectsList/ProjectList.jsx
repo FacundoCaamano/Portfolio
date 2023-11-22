@@ -1,7 +1,10 @@
 import './ProjectList.css'
 import { ProjectCard } from './projectCard/ProjectCard';
 import { ProjectsInfo } from '../../../../projectsInfo/ProjectsInfo.jsx'
-import { useState } from 'react'; export const ProjectsList = ({ projectsData }) => {
+import { useState } from 'react'; 
+
+
+export const ProjectsList = ({ projectsData, isDarkMode, setIsDarkMode }) => {
     const [selectedTools, setSelectedTools] = useState([]); // Estado para almacenar las herramientas seleccionadas
 
     const handleToolSelection = (tool) => {
@@ -68,7 +71,7 @@ import { useState } from 'react'; export const ProjectsList = ({ projectsData })
             <div className='proyectListContainer'>
                 {/* Renderizar proyectos filtrados */}
                 {filteredProjects.map(proyecto => (
-                    <ProjectCard key={proyecto.id} info={proyecto} />
+                    <ProjectCard key={proyecto.id} info={proyecto} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
                 ))}
             </div>
         </div>

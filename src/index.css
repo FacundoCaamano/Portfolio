@@ -1,19 +1,24 @@
 :root {
-    --color1: #44749d;
-    --color2: #c6d4e1;
-    --color3: #edf0f2;
-    --color4: #48586f
+  --color1: #44749d;
+  --color2: #c6d4e1;
+  --color3: #edf0f2;
+  --color4: #48586f;
+  --color5: #2d394a;
+  --color6: #27b1bf
 }
 
 
 body::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: var(--color2);        /* color of the tracking area */
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: var(--color4);    /* color of the scroll thumb */
-  }
+  width: 12px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--color2);
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color4);
+  /* color of the scroll thumb */
+}

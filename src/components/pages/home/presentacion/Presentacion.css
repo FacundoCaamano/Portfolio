@@ -1,15 +1,17 @@
 .presentacionContainer{
     width: 100%;
-    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.container {
+.containerPresentacion {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
 }
 
 .presentation-section {
@@ -21,13 +23,16 @@
     overflow: hidden;
     padding: 20px;
 }
+.presentation-section.darkMode{
+    background-color: var(--color5);
+}
 
 .intro {
     float: left;
     width: 60%;
 }
 
-.intro h1 {
+.ligthModeP {
     font-size: 2.5rem;
     color: #333;
 }
@@ -40,7 +45,6 @@
 .profile-image {
     float: right;
     width: 30%;
-    
 }
 
 .profile-image img {
@@ -51,4 +55,25 @@
 
 .highlight {
     color: #3498db;
+}
+.darkModeP{
+    color: var(--color3) !important;
+}
+.darkModeH1{
+    color: var(--color3) ;
+}
+
+@media screen and (max-width: 786px) {
+    .containerPresentacion {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .profile-image {
+        width: 90%;
+    }
+    .intro {
+        width: 80%;
+    }
+    
 }

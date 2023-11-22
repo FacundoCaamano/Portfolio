@@ -5,7 +5,7 @@ export const DropdownComponent = () => {
 
         <div className="dropdown">
             <button className="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown button
+                Secciones
             </button>
             <ul className="dropdown-menu">
                 <li><a className="dropdown-item" href="#presentacion">Presentacion</a></li>

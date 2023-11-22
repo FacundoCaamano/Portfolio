@@ -46,3 +46,7 @@
 .buttonsForm .btn:hover{
     background-color: var(--color4) ;
 }
+.darkModeForm{
+    background-color: var(--color5);
+    color: var(--color2);
+}
