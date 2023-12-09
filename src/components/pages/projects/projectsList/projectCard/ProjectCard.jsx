@@ -1,5 +1,5 @@
 import './ProjectCard.css'
-export const ProjectCard = ({ info , isDarkMode, setIsDarkMode}) => {
+export const ProjectCard = ({ info, isDarkMode, setIsDarkMode }) => {
     return (
         <>
             <div className={isDarkMode ? "card mb-3 darkModeCard" : "card mb-3"} style={{ maxWidth: "600px", minHeight: "220px", padding: "20px" }}>
@@ -14,13 +14,28 @@ export const ProjectCard = ({ info , isDarkMode, setIsDarkMode}) => {
                                 <div className='toolsContainer'>
                                     {info.herramientas.map((herramienta, index) => {
                                         return (
+                                            
                                             <span className={isDarkMode ? 'tool darkModeTool' : ''} key={index}> {herramienta} </span>
                                         )
                                     })}
                                 </div>
+                                {
+                                    info.api ?
+                                        <div className='toolsContainer'>
+                                            <span className={isDarkMode ? 'tool darkModeTool' : ''}>API:</span>
+                                            {
+                                                info.api.map((api, index) => {
+                                                    return (
+                                                        <span className={isDarkMode ? 'tool darkModeTool' : ''} key={index}> {api} </span>
+                                                    )
+                                                })
+                                            }
+                                        </div>
+                                        : null
+                                }
                                 <div className="links--container">
-                                    <a href={info.repositorio} target='_blank' className={ isDarkMode ? 'link--project darkModeLink' : 'link--project'}>Link repositorio</a>
-                                    <a href={info.link} target='_blank' className={ isDarkMode ? 'link--project darkModeLink' : 'link--project'}>Link web</a>
+                                    <a href={info.repositorio} target='_blank' className={isDarkMode ? 'link--project darkModeLink' : 'link--project'}>Link repositorio</a>
+                                    <a href={info.link} target='_blank' className={isDarkMode ? 'link--project darkModeLink' : 'link--project'}>Link web</a>
                                 </div>
                             </div>
                         </div>

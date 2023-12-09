@@ -3,8 +3,27 @@ import Portafolio from '../assets/imgProyectos/portafolio.png'
 import VehiculosCaamaño from '../assets/imgProyectos/vehiculosCaamano.png'
 import PerifericosCaamaño from '../assets/imgProyectos/perifericos-caamaño.jpg'
 import tateti from '../assets/imgProyectos/tateti.jpg'
+import angularCurso from '../assets/imgProyectos/angular-curso.png'
 
 export const ProjectsInfo = [
+    {
+        id: 6, name: "Angular-curso",
+        pictureUrl: angularCurso,
+        repositorio: 'https://github.com/FacundoCaamano/ProyectoFinalAngular',
+        link: "https://proyecto-final-angular-psi.vercel.app/dashboard",
+        herramientas: [
+            "Angular",
+            "TypeScript",
+            "SCSS",
+            "RxJs",
+            "NGRX"
+        ],
+        api:[
+            "NodeJs",
+            "Express",
+            "TypeScript"
+        ]
+    },
     {
         id: 5, name: "Ta Te Ti",
         pictureUrl: tateti,

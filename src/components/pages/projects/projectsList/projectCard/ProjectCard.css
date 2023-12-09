@@ -33,3 +33,9 @@
 .darkModeTool{
     color: var(--color2);
 }
+
+.apiContainer{
+    color: var(--color3);
+    display: flex;
+    gap: 10px;
+}
