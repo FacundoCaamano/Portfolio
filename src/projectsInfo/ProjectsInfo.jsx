@@ -4,8 +4,27 @@ import VehiculosCaamaño from '../assets/imgProyectos/vehiculosCaamano.png'
 import PerifericosCaamaño from '../assets/imgProyectos/perifericos-caamaño.jpg'
 import tateti from '../assets/imgProyectos/tateti.jpg'
 import angularCurso from '../assets/imgProyectos/angular-curso.png'
-
+import protask from '../assets/imgProyectos/protask.png'
 export const ProjectsInfo = [
+    {
+        id:7, 
+        name: "ProTask",
+        pictureUrl: protask,
+        repositorio: 'https://github.com/FacundoCaamano/proTask',
+        link: "https://pro-task-rho.vercel.app/dashboard/home",
+        herramientas:[
+            "Angular",
+            "TypeScript",
+            "SCSS",
+            "RxJs",
+            "Bootstrap"
+        ],
+        api:[
+            "NodeJs",
+            "Express",
+            "TypeScript"
+        ]
+    },
     {
         id: 6, name: "Angular-curso",
         pictureUrl: angularCurso,

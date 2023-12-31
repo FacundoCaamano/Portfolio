@@ -1,5 +1,6 @@
 .imgCard{
-    object-fit: cover;
+    object-fit: contain;
+    height: 100%;
 }
 
 .links--container{
@@ -10,6 +11,7 @@
     width: 40%;
     color: var(--color1);
     text-decoration: none;
+    transition: ease all 0.3s;
 }
 .link--project:hover{
     transform: scale(1.1);
