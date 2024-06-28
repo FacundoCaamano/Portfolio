@@ -8,9 +8,11 @@ import protask from '../assets/imgProyectos/protask.png'
 import carritopro from '../assets/imgProyectos/carrito-pro.png'
 import pc from '../assets/icons/monitor.png'
 import responsive from '../assets/icons/responsive.png'
+import thefucasocial from '../assets/imgProyectos/thefucasocial.png'
+import teu from '../assets/imgProyectos/t.e.u.png'
 export const ProjectsInfo = [
     {
-        id:8, 
+        id:10, 
         fullstack:'✔️',
         name: "carrito-pro",
         pictureUrl: carritopro,
@@ -28,6 +30,46 @@ export const ProjectsInfo = [
         api:[
             "NodeJs",
             "Express",
+            "MongoDB"
+        ]
+    },
+    {
+        id:9, 
+        fullstack:'❌',
+        name: "T.E.U",
+        pictureUrl: teu,
+        responsive: responsive,
+        repositorio: 'https://github.com/FacundoCaamano/T.E.U',
+        link: "https://t-e-u.vercel.app/home",
+        herramientas:[
+            "Angular",
+            "TypeScript",
+            "SCSS",
+            "RxJs",
+            "Animate.css"
+        ]
+    },
+    {
+        id:8, 
+        fullstack:'✔️',
+        name: "the-fuca-social",
+        pictureUrl: thefucasocial,
+        responsive: responsive,
+        repositorio: 'https://github.com/FacundoCaamano/thefucasocial',
+        link: "https://thefucasocial.vercel.app",
+        api_git:"https://github.com/FacundoCaamano/thefucasocial-api",
+        herramientas:[
+            "Angular",
+            "TypeScript",
+            "SCSS",
+            "RxJs",
+            "Angular Material"
+        ],
+        api:[
+            "NodeJs",
+            "Express",
+            "TypeScript",
+            "Socket.io",
             "MongoDB"
         ]
     },

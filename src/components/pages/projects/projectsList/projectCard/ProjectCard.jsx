@@ -2,7 +2,7 @@ import './ProjectCard.css'
 export const ProjectCard = ({ info, isDarkMode, setIsDarkMode }) => {
     return (
         <>
-            <div className={isDarkMode ? "card mb-3 darkModeCard" : "card mb-3"} style={{ maxWidth: "600px", minHeight: "220px", padding: "20px" }}>
+            <div className={isDarkMode ? "card mb-3 darkModeCard" : "card mb-3"} style={{ maxWidth: "600px", height: "360px", padding: "20px" }}>
                 <div className="row g-0">
                     <div className="col-md-4">
                         <img src={info.pictureUrl} className="img-fluid rounded-start imgCard" alt="..." />
