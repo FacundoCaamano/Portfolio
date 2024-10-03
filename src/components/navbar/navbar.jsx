@@ -53,19 +53,19 @@ export const NavBar = ({isDarkMode, setIsDarkMode}) => {
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
               <NavLink className="nav-link"  aria-current="page" to="/home">
                 <li className="nav-item"  data-bs-dismiss={viewPortMovil}>
-                  <img src={home} alt="icon" /> Home
+                  <img src={home} alt="icon" /> Inicio
                 </li>
               </NavLink>
               <NavLink to='/projects' className="nav-link" >
                 <li className="nav-item" data-bs-dismiss={viewPortMovil}>
                   <img src={project} alt="" />
-                  Project
+                  Projectos
                 </li>
               </NavLink>
               <NavLink to="/contact" className="nav-link" >
                 <li className="nav-item" data-bs-dismiss={viewPortMovil}>
                   <img src={contact} alt="contact" />
-                  Contact
+                  Contacto
                 </li>
               </NavLink>
             </ul>

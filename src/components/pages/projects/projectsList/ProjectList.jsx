@@ -69,7 +69,6 @@ export const ProjectsList = ({ projectsData, isDarkMode, setIsDarkMode }) => {
                 </div>
             </div>
             <div className='proyectListContainer'>
-                {/* Renderizar proyectos filtrados */}
                 {filteredProjects.map(proyecto => (
                     <ProjectCard key={proyecto.id} info={proyecto} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
                 ))}

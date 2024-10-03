@@ -1,11 +1,23 @@
+import { useState } from 'react'
 import './ProjectCard.css'
 export const ProjectCard = ({ info, isDarkMode, setIsDarkMode }) => {
+    const [loading, setLoading] = useState(true)
+
+    const handleImageLoad=()=>{
+        setLoading(false)
+    }
     return (
         <>
             <div className={isDarkMode ? "card mb-3 darkModeCard" : "card mb-3"} style={{ maxWidth: "600px", height: "360px", padding: "20px" }}>
-                <div className="row g-0">
+            {loading && <div className="loader">Loading...</div>}
+                <div className="row g-0"  style={{ display: loading ? 'none' : 'flex' }}>
                     <div className="col-md-4">
-                        <img src={info.pictureUrl} className="img-fluid rounded-start imgCard" alt="..." />
+                        <img 
+                            src={info.pictureUrl} 
+                            className="img-fluid rounded-start imgCard" 
+                            alt="..." 
+                            onLoad={handleImageLoad}
+                            />
                     </div>
                     <div className="col-md-8">
                         <div className="card-body cardProjectInfo">

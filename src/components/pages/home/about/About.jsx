@@ -12,7 +12,7 @@ export const About = ({isDarkMode, setIsDarkMode}) => {
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">
-                            <a href={curriculum} download='cvFacundoCaamano' className={isDarkMode ? "card-title tituloCard darkModeTituloCard" : "card-title tituloCard"}>Descargar CV</a>
+                            <a href={curriculum} download='CV-Facundo Caamano' className={isDarkMode ? "card-title tituloCard darkModeTituloCard" : "card-title tituloCard"}>Descargar CV</a>
                         </div>
                     </div>
                 </div>
