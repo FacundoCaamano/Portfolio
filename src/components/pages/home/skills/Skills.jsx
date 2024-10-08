@@ -115,6 +115,33 @@ export const Skills = () => {
                         className="skill--img" src="https://cdn.worldvectorlogo.com/logos/rxjs-1.svg" alt="rxjs" />
                     </div>
                 </div>
+                <div className="row">
+                    <div className="col">
+                        <img 
+                        data-bs-toggle="tooltip" 
+                        data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="MongoDb"   
+                        className="skill--img" src="https://www.svgrepo.com/show/331488/mongodb.svg" alt="mongodb" />
+                    </div>
+                    <div className="col">
+                        <img 
+                        data-bs-toggle="tooltip" 
+                        data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="VsCode"   
+                        className="skill--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/768px-Visual_Studio_Code_1.35_icon.svg.png" alt="VsCode" />
+                    </div>
+                    <div className="col">
+                        <img 
+                        data-bs-toggle="tooltip" 
+                        data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="MySql"   
+                        className="skill--img" src="https://1000marcas.net/wp-content/uploads/2020/11/MySQL-logo.png" alt="MySql" />
+                    </div>
+                    
+                </div>
             </div>
         </>
     )
