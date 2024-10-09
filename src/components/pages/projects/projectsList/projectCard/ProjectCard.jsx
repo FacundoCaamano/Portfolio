@@ -8,7 +8,7 @@ export const ProjectCard = ({ info, isDarkMode, setIsDarkMode }) => {
     }
     return (
         <>
-            <div className={isDarkMode ? "card mb-3 darkModeCard" : "card mb-3"} style={{ maxWidth: "600px", height: "360px", padding: "20px" }}>
+            <div className={isDarkMode ? "card mb-3 darkModeCard" : "card mb-3"} style={{ maxWidth: "600px", minHeight: "400px", padding: "10px",display:'flex',justifyContent:'center' }}>
             {loading && <div className="loader">Loading...</div>}
                 <div className="row g-0"  style={{ display: loading ? 'none' : 'flex' }}>
                     <div className="col-md-4">
